@@ -169,10 +169,10 @@ endmodule
 
 
 ## JK FLIP FLOP
-![Screenshot (113)](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/71989451-1471-4e7d-b347-3eda38e7be58)
 
 
 
+![JK FLIP FLOP](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/a107c8d8-2c11-463c-aecf-1fd5bfd1deba)
 
 
 

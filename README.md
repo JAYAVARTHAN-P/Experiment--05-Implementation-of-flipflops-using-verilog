@@ -155,8 +155,38 @@ qbar=((~qbar)&k)| (qbar&(~j));
 end
 endmodule
 ```
+## D FLIPFLOP
+```
+module d(d,clk,q,qbar);
+input d,clk;
+output reg q;
+output reg qbar;
+initial q=0;
+initiak qbar=1;
+always @(posedge clk)
+begin
+q=d;
+qbar=~q;
+end
+endmodule
+
+```
+## T FLIPFLOP
+
+```
 
 
+module exp_5c(clk,T,q,qbar);
+input clk,T;
+output q,qbar;
+reg q,qbar;
+always @(posedge clk)
+begin
+q=(T&~q)|(~T&q);
+qbar=~q;
+end 
+endmodule
+```
 
 
 
@@ -171,7 +201,11 @@ endmodule
 ## JK FLIP FLOP
 ![Screenshot (113)](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/7bd8f670-9fa5-4c46-a1c6-cd849706fea6)
 
+## D FLIP FLOP
+![D FLIP](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/db5d8c26-1718-4233-b3e5-9940e60d9a3b)
 
+## T FLIP FLOP
+![T FLIP](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/d5e72db2-aa9c-4ae6-9115-8ae980e17637)
 
 
 
@@ -186,7 +220,11 @@ endmodule
 
 ![JK FLIP FLOP](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/a107c8d8-2c11-463c-aecf-1fd5bfd1deba)
 
+## D FLIP FLOP
+![TD](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/a4ddcdf3-5bb9-4112-bb43-d776c3368bc4)
 
+## T FLIP FLOP
+![DD](https://github.com/JAYAVARTHAN-P/Experiment--05-Implementation-of-flipflops-using-verilog/assets/121369281/ff63c3e7-17a8-493d-8a5e-2fbc7300c6b6)
 
 
 
